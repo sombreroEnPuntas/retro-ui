@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   styleguideComponents: {
-    Wrapper: path.join(__dirname, 'src/styleguide/ThemeWrapper'),
+    Wrapper: path.join(__dirname, 'src/theme/ThemeWrapper'),
   },
   template: {
     head: {

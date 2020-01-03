@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 
 // Dependencies
-import { ThemeWrapper } from '../styleguide/ThemeWrapper'
+import { ThemeWrapper } from '../theme/ThemeWrapper'
 
 // Unit
 import Button from './Button'
