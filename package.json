@@ -11,13 +11,17 @@
     "build"
   ],
   "scripts": {
-    "start": "styleguidist server",
     "build": "rollup -c",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ignore-path .gitignore",
+    "start": "styleguidist server",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "ignorePatterns": [
+      "**/*.md"
+    ]
   },
   "browserslist": {
     "production": [
