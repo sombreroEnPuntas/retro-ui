@@ -26,6 +26,8 @@ const App = () => (
 )
 ```
 
+Detailed docs [here](https://sombreroenpuntas.github.io/retro-ui/)
+
 ## Development
 
 This react library is made with `styled-components`.  

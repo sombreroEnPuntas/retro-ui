@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "license": "MIT",
   "description": "NES-style (8bit-like) react & styled-components UI",
+  "homepage": "https://sombreroenpuntas.github.io/retro-ui/",
   "repository": "sombreroEnPuntas/retro-ui",
   "main": "build/index.js",
   "module": "build/index.es.js",
