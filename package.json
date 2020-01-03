@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "styleguidist server",
-    "build": "styleguidist build",
+    "build": "tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
