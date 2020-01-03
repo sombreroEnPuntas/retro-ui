@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
+    "docs": "styleguidist build",
     "eject": "react-scripts eject",
     "lint": "eslint . --ignore-path .gitignore",
     "start": "styleguidist server",
@@ -20,6 +21,7 @@
   "eslintConfig": {
     "extends": "react-app",
     "ignorePatterns": [
+      "docs/",
       "**/*.md"
     ]
   },

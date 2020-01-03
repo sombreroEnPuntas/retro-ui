@@ -4,6 +4,7 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/theme/ThemeWrapper'),
   },
+  styleguideDir: 'docs',
   template: {
     head: {
       links: [

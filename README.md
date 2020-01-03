@@ -1,7 +1,7 @@
 # retro-ui
 
-![GitHub](https://img.shields.io/github/license/sombreroenpuntas/retro-ui)
-![npm](https://img.shields.io/npm/v/retro-ui)
+[![license: MIT](https://img.shields.io/github/license/sombreroenpuntas/retro-ui)](LICENSE)
+[![npm: retro-ui](https://img.shields.io/npm/v/retro-ui)](https://www.npmjs.com/package/retro-ui)
 
 NES-style (8bit-like) react &amp; styled-components UI
 
@@ -17,22 +17,28 @@ yarn add retro-ui
 
 ```jsx
 import React from 'react'
-import { Button } from 'retro-ui'
+import { Button, ThemeWrapper } from 'retro-ui'
 
-const App = () => <Button>{'Rawr!'}</Button>
+const App = () => (
+  <ThemeWrapper>
+    <Button>{'Rawr!'}</Button>
+  </ThemeWrapper>
+)
 ```
 
 ## Development
 
-This react components library is made with `styled-components` and `react-styleguidist` for docs.
+This react library is made with `styled-components`.  
+Uses `react-styleguidist` for docs.
 
 ### Scripts
 
 ```sh
-yarn #install deps :)
-yarn start # runs a dev server with hot reload
-yarn build # builds
-yarn test  # run tests with jest and @testing-library/react
+yarn        # install deps :)
+yarn start  # runs a styleguidist dev server with hot reload
+yarn docs   # builds a styleguidist docs page
+yarn build  # builds for distributing as npm package
+yarn test   # run tests with jest and @testing-library/react
 ```
 
 ## Contribute
@@ -41,16 +47,22 @@ Yes please!
 
 ### TODO
 
+- Dump all my components from other projects here :)
+- eject `crapp` and organize properly deps to reduce bundle size
 - Global resets & fonts via styled-components
 - Better stories, including types
-- Write meaningful tests & coverage (wdio?)
-- setup eslint & static analysis
-- use commitlint & standard version
-- setup dev hooks
-- setup build lib
-- setup github actions!!!
-- Dump all my components from other projects here :)
 - Is it possible to source stories from tests?
+
+---
+
+- Write meaningful tests & coverage (wdio?)
+- setup eslint/prettier & static analysis (codeclimate?)
+- use commitlint & standard version
+
+---
+
+- setup dev hooks: lint and stuff
+- setup CI/CD (github actions)!!!
 
 ## Thanks to NES.css
 
