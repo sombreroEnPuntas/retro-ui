@@ -1,4 +1,3 @@
-import commonjs from 'rollup-plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 
 import pkg from './package.json'
@@ -27,23 +26,6 @@ export default {
     typescript({
       rollupCommonJSResolveHack: true,
       clean: true,
-    }),
-    commonjs({
-      include: ['node_modules/**'],
-      namedExports: {
-        'node_modules/react/index.js': [
-          'cloneElement',
-          'createContext',
-          'Component',
-          'createElement',
-        ],
-        'node_modules/react-dom/index.js': ['render'],
-        'node_modules/react-is/index.js': [
-          'isElement',
-          'isValidElementType',
-          'ForwardRef',
-        ],
-      },
     }),
   ],
 }
