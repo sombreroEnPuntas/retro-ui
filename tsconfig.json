@@ -3,6 +3,7 @@
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
+    "declarationDir": "build",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,

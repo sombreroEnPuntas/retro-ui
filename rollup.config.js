@@ -1,6 +1,7 @@
 import typescript from 'rollup-plugin-typescript2'
 
 import pkg from './package.json'
+import tsconfig from './tsconfig.json'
 
 export default {
   input: 'src/index.ts',
@@ -26,6 +27,13 @@ export default {
     typescript({
       rollupCommonJSResolveHack: true,
       clean: true,
+      tsconfigOverride: {
+        exclude: [
+          ...tsconfig.exclude,
+          'src/setupTests.ts',
+          'src/**/*.test.tsx',
+        ],
+      },
     }),
   ],
 }
