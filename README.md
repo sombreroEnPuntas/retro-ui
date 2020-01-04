@@ -49,7 +49,6 @@ Yes please!
 
 ### TODO
 
-- How to make rollup typescript plugin ignore files?
 - Dump all my components from other projects here :)
 - eject `crapp` and organize properly deps to reduce bundle size
 - Global resets & fonts via styled-components
