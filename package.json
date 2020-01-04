@@ -8,6 +8,7 @@
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
+  "types": "build/index.d.ts",
   "files": [
     "build"
   ],
@@ -57,12 +58,8 @@
     "rollup": "^1.27.14",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-typescript2": "^0.25.3",
     "typescript": "~3.7.2"
   },
-  "peerDependencies": {
-    "react": "^16.12.0",
-    "styled-components": "^4.4.1"
-  }
+  "peerDependencies": {}
 }
