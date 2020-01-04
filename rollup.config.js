@@ -26,7 +26,6 @@ export default {
     resolve(),
     typescript({
       rollupCommonJSResolveHack: true,
-      exclude: ['*.test.ts+(|x)', '**/*.test.ts+(|x)'],
       clean: true,
     }),
     commonjs({

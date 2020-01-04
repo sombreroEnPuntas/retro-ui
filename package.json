@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "docs": "styleguidist build",
+    "docs": "styleguidist build && cp favicon.ico docs/",
     "eject": "react-scripts eject",
     "lint": "eslint . --ignore-path .gitignore",
     "start": "styleguidist server",
@@ -39,6 +39,10 @@
     ]
   },
   "dependencies": {
+    "react": "^16.12.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -47,18 +51,18 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.4.1",
-    "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "react-styleguidist": "^10.4.0",
-    "styled-components": "^4.4.1",
-    "typescript": "~3.7.2"
-  },
-  "devDependencies": {
     "rollup": "^1.27.14",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-typescript2": "^0.25.3"
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "~3.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "styled-components": "^4.4.1"
   }
 }
