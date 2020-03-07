@@ -13,11 +13,10 @@
     "build"
   ],
   "scripts": {
-    "build": "rollup -c",
     "docs": "styleguidist build && cp favicon.ico docs/",
     "eject": "react-scripts eject",
     "lint": "eslint src/{*,**/*}.ts* --ignore-path .gitignore",
-    "release": "standard-version",
+    "release": "rm -rf build && rollup -c && standard-version",
     "start": "styleguidist server",
     "test": "react-scripts test"
   },
