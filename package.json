@@ -20,6 +20,17 @@
     "start": "styleguidist server",
     "test": "react-scripts test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,json,css,md}": [
+      "yarn lint",
+      "prettier --write"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app",
     "ignorePatterns": [
@@ -53,6 +64,9 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.4.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "react-styleguidist": "^10.4.0",
