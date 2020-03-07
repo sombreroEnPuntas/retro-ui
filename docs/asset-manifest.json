@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/retro-ui/build/main.cff70912.js",
+    "main.js": "/retro-ui/build/main.634aae69.js",
     "runtime-main.js": "/retro-ui/build/bundle.343a9ba5.js",
-    "build/2.ac5a351e.js": "/retro-ui/build/2.ac5a351e.js",
-    "build/2.ac5a351e.js.LICENSE": "/retro-ui/build/2.ac5a351e.js.LICENSE",
+    "build/2.2316a79e.js": "/retro-ui/build/2.2316a79e.js",
+    "build/2.2316a79e.js.LICENSE": "/retro-ui/build/2.2316a79e.js.LICENSE",
     "index.html": "/retro-ui/index.html",
-    "precache-manifest.71e91debbbf023b10d77411e8a19a451.js": "/retro-ui/precache-manifest.71e91debbbf023b10d77411e8a19a451.js",
+    "precache-manifest.3ad555d32052e1361e2aa58106f374d4.js": "/retro-ui/precache-manifest.3ad555d32052e1361e2aa58106f374d4.js",
     "service-worker.js": "/retro-ui/service-worker.js"
   },
   "entrypoints": [
     "build/bundle.343a9ba5.js",
-    "build/2.ac5a351e.js",
-    "build/main.cff70912.js"
+    "build/2.2316a79e.js",
+    "build/main.634aae69.js"
   ]
 }
