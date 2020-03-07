@@ -16,15 +16,17 @@
     "build": "rollup -c",
     "docs": "styleguidist build && cp favicon.ico docs/",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ignore-path .gitignore",
+    "lint": "eslint src/{*,**/*}.ts* --ignore-path .gitignore",
     "start": "styleguidist server",
     "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app",
     "ignorePatterns": [
-      "docs/",
-      "**/*.md"
+      "build",
+      "coverage",
+      "docs",
+      "node_modules"
     ]
   },
   "browserslist": {
