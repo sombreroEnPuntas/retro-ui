@@ -29,7 +29,6 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,json,css,md}": [
-      "yarn lint",
       "prettier --write"
     ]
   },
