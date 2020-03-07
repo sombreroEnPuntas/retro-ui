@@ -21,10 +21,16 @@ const colors = {
     outline: '#212529',
     shadow: '#4d5256',
   },
+  disabled: '#ebebe4',
   error: {
     background: '#ffd7cf',
     outline: '#ce372b',
     shadow: '#e76e55',
+  },
+  success: {
+    background: '#c9d68f',
+    outline: '#76c442',
+    shadow: '#92cc41',
   },
 }
 
