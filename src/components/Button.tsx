@@ -1,20 +1,23 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-  ${({ theme: { colors } }) => `
+  ${({ theme: { colors, fonts } }) => `
     background-color: ${colors.black.background};
     box-shadow: 4px 0 ${colors.black.shadow},
       0 -4px ${colors.black.shadow},
       -4px 0 ${colors.black.shadow},
       0 4px ${colors.black.shadow};
-    display: block;
-    margin: 0.5em;
-    padding: 0.5em;
     color: ${colors.black.outline};
+    cursor: pointer;
+    display: block;
+    font-family: ${fonts.fontFamily};
     font-size: 0.65em;
     font-weight: bold;
-    cursor: pointer;
-    height: 100%;`}
+    height: 100%;
+    line-height: calc(2 * ${fonts.lineHeight});
+    margin: 0.5em;
+    padding: 0.5em;
+    `}
 `
 
 /** @component */

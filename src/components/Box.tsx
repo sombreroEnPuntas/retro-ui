@@ -16,21 +16,24 @@ export const BoxWrapper = styled.pre<Props>`
       0 4px ${colors[type].shadow};
     display: block;
     margin: 0.5em;
+    max-width: 450px;
     overflow-x: auto;
     padding: 0.5em;
     white-space: pre-wrap;
-    max-width: 450px;`}
+    `}
 `
 
 export const MessageWrapper = styled.code<Props>`
   ${({ theme: { colors, fonts }, type }) => `
-    font-family: ${fonts.fontFamily};
+    align-items: center;
     color: ${colors[type].outline};
+    display: flex;
+    font-family: ${fonts.fontFamily};
     font-size: 0.65em;
     font-weight: bold;
-    display: flex;
     justify-content: space-between;
-    align-items: center;`}
+    line-height: calc(2 * ${fonts.lineHeight});
+    `}
 `
 
 export const Box: React.FunctionComponent<{ error?: boolean }> = ({
