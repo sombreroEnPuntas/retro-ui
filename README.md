@@ -59,11 +59,9 @@ Yes please!
 
 - Write meaningful tests & coverage (wdio?)
 - setup eslint/prettier & static analysis (codeclimate?)
-- use commitlint & standard version
 
 ---
 
-- setup dev hooks: lint and stuff
 - setup CI/CD (github actions)!!!
 
 ## Thanks to NES.css
