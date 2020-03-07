@@ -1,6 +1,6 @@
 {
   "name": "retro-ui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "description": "NES-style (8bit-like) react & styled-components UI",
   "homepage": "https://sombreroenpuntas.github.io/retro-ui/",
