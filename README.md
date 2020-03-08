@@ -68,9 +68,9 @@ yarn docs   # builds a styleguidist docs page
 To try out the library from a local build:
 
 ```sh
-yarn build                  # builds for distributing as npm package
-cd ../react-test-app        # navigate to a test project
-yarn add file:../retro-ui/  # install the library from local version
+yarn build                      # builds for distributing as npm package
+cd ../react-test-app            # navigate to a test project
+yarn add file:../retro-ui/build # install the library from local version
 ```
 
 To create a tag:
@@ -98,7 +98,7 @@ Yes please!
 ### TODO
 
 - Dump all my components from other projects here :)
-- eject `crapp` and organize properly deps to reduce bundle size
+- eject `crapp`
 - Global resets & fonts via styled-components
 - Better stories, including types
 - Is it possible to source stories from tests?

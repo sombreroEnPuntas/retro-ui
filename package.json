@@ -53,30 +53,32 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {
-    "react": "^16.12.0",
-    "styled-components": "^4.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/styled-components": "^4.4.1",
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^5.0.1",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
     "react-styleguidist": "^10.4.0",
     "rollup": "^1.27.14",
     "rollup-plugin-typescript2": "^0.25.3",
     "standard-version": "^7.1.0",
-    "typescript": "~3.7.2"
+    "styled-components": "^5.0.1",
+    "typescript": "~3.8.3"
   },
-  "peerDependencies": {}
+  "peerDependencies": {
+    "react": "16.x",
+    "styled-components": "5.x"
+  }
 }
