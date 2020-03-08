@@ -1,20 +1,30 @@
 name: Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'master'
+    tags-ignore:
+      - '*'
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use latest Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
+
       - name: Install dependencies
         run: yarn --frozen-lockfile
+
+      - name: Lint
+        run: yarn lint
+
       - name: Unit/Integration tests
         run: yarn test --coverage
         env:
           CI: true
+
       - name: Archive code coverage results
         uses: actions/upload-artifact@v1
         with:

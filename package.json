@@ -13,17 +13,18 @@
     "build"
   ],
   "scripts": {
+    "build": "rm -rf build && rollup -c",
     "docs": "styleguidist build && cp favicon.ico docs/",
     "eject": "react-scripts eject",
     "lint": "eslint src/{*,**/*}.ts* --ignore-path .gitignore",
-    "release": "rm -rf build && rollup -c && standard-version",
+    "release": "standard-version",
     "start": "styleguidist server",
     "test": "react-scripts test"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn lint && lint-staged"
     }
   },
   "lint-staged": {
