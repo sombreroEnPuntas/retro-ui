@@ -13,7 +13,23 @@ NES-style (8bit-like) react &amp; styled-components UI
 yarn add retro-ui
 ```
 
-2. Use like:
+2. Add the font via CDN on your `index.html` head:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- [...] -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+    />
+  </head>
+  <!-- [...] -->
+</html>
+```
+
+3. Use like:
 
 ```jsx
 import React from 'react'
