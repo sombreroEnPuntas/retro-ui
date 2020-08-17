@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.8...v0.0.9) (2020-08-17)
+
+
+### Features
+
+* modal ([fce2879](https://github.com/sombreroEnPuntas/retro-ui/commit/fce287916046f75d7021e79de637a48a80b616b7))
+
+
+### Bug Fixes
+
+* organize deps properly ([8920c4c](https://github.com/sombreroEnPuntas/retro-ui/commit/8920c4cc9208ce3dbabc321e2b73306b9fd4bac1))
+
 ### [0.0.8](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.7...v0.0.8) (2020-03-08)
 
 ### [0.0.7](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.6...v0.0.7) (2020-03-07)
