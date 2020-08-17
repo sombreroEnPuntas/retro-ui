@@ -63,8 +63,9 @@
     "@types/jest": "^25.1.4",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "@types/styled-components": "^5.0.1",
+    "@types/styled-components": "^5.1.2",
     "husky": "^4.2.3",
+    "jest-styled-components": "^7.0.2",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "react": "^16.13.0",
@@ -74,8 +75,8 @@
     "rollup": "^1.27.14",
     "rollup-plugin-typescript2": "^0.25.3",
     "standard-version": "^8.0.1",
-    "styled-components": "^5.0.1",
-    "typescript": "~3.8.3"
+    "styled-components": "^5.1.1",
+    "typescript": "^3.9.7"
   },
   "peerDependencies": {
     "react": "16.x",

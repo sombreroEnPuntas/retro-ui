@@ -13,7 +13,6 @@ export const Button = styled.button`
     font-family: ${fonts.fontFamily};
     font-size: 0.65em;
     font-weight: bold;
-    height: 100%;
     line-height: calc(2 * ${fonts.lineHeight});
     margin: 0.5em;
     padding: 0.5em;

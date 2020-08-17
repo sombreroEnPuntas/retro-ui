@@ -100,8 +100,12 @@ Yes please!
 - Dump all my components from other projects here :)
 - eject `crapp`
 - Global resets & fonts via styled-components
-- Better stories, including types
-- Is it possible to source stories from tests?
+
+---
+
+- is styleguidist making sense, or switch to storybook?
+  - Better stories, including types
+  - Is it possible to source stories from tests?
 
 ---
 
