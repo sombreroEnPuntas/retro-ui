@@ -16,10 +16,11 @@
     "build": "rm -rf build && rollup -c",
     "docs": "styleguidist build && cp favicon.ico docs/",
     "eject": "react-scripts eject",
-    "lint": "eslint src/{*,**/*}.ts* --ignore-path .gitignore",
+    "lint": "eslint src/{*,**/*}.ts* --ignore-path .gitignore && bash -c tsc --noEmit",
     "release": "standard-version",
     "start": "styleguidist server",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false"
   },
   "husky": {
     "hooks": {
@@ -41,6 +42,14 @@
       "node_modules"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!**/*.d.ts",
+      "!**/node_modules/**",
+      "!src/index.ts"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -57,15 +66,13 @@
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^10.4.9",
     "@types/jest": "^25.1.4",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
+    "@types/react": "^16.9.48",
     "@types/styled-components": "^5.1.2",
     "husky": "^4.2.5",
-    "jest-styled-components": "^7.0.2",
+    "jest-styled-components": "^7.0.3",
     "lint-staged": "^10.2.13",
     "prettier": "^2.1.1",
     "react": "^16.13.1",

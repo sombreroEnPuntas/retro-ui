@@ -11,7 +11,7 @@ test('renders button with children', () => {
   const { getByText } = render(
     <ThemeWrapper>
       <Button>{'Rawr!'}</Button>
-    </ThemeWrapper>,
+    </ThemeWrapper>
   )
   const buttonElement = getByText(/Rawr!/i)
   expect(buttonElement).toBeInTheDocument()

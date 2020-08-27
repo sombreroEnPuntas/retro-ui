@@ -23,7 +23,7 @@ describe.each`
     const { getByTestId } = render(
       <ThemeWrapper>
         <Input {...getProps(props)} />
-      </ThemeWrapper>,
+      </ThemeWrapper>
     )
     const testedElement = getByTestId('input')
     expect(testedElement).toBeInTheDocument()

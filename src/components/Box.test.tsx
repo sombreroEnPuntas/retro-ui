@@ -15,7 +15,7 @@ test('Box renders a message correctly', () => {
   const { getByText } = render(
     <ThemeWrapper>
       <Box {...getProps({ children: ':)' })} />
-    </ThemeWrapper>,
+    </ThemeWrapper>
   )
 
   expect(getByText(':)')).toBeVisible()
@@ -26,7 +26,7 @@ test('Box renders an error message correctly', () => {
   const { getByText } = render(
     <ThemeWrapper>
       <Box {...getProps({ children: "418: I'm a teapot", error: true })} />
-    </ThemeWrapper>,
+    </ThemeWrapper>
   )
 
   expect(getByText("418: I'm a teapot")).toBeVisible()

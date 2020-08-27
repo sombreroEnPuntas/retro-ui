@@ -24,7 +24,7 @@ describe.each`
     const { getByTestId } = render(
       <ThemeWrapper>
         <Modal {...getProps(props)} />
-      </ThemeWrapper>,
+      </ThemeWrapper>
     )
     const testedElement = getByTestId('modal')
     expect(testedElement).toBeInTheDocument()
