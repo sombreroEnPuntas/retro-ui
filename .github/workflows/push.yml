@@ -6,27 +6,56 @@ on:
       - 'master'
     tags-ignore:
       - '*'
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  test:
+  lint:
+    name: lint
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
-
-      - name: Lint
-        run: yarn lint
-
-      - name: Unit/Integration tests
-        run: yarn test --coverage
-        env:
-          CI: true
-
-      - name: Archive code coverage results
-        uses: actions/upload-artifact@v1
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
         with:
-          name: code-coverage-report
-          path: coverage
+          node-version: '12'
+      - run: npm install -g yarn
+      - run: yarn --frozen-lockfile
+      - run: yarn lint
+
+  test:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest, macOS-latest]
+        node: ['12']
+    name: test/node ${{ matrix.node }}/${{ matrix.platform }}
+    runs-on: ${{ matrix.platform }}
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm install -g yarn
+      - run: yarn --frozen-lockfile
+      - run: yarn test
+
+  coverage:
+    needs: [test]
+    name: coverage
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: '12'
+      - run: npm install -g yarn
+      - run: yarn --frozen-lockfile
+      - uses: paambaati/codeclimate-action@v2.6.0
+        env:
+          CC_TEST_REPORTER_ID: 66d6f8d8bdc8d242286f578496dab95f5c5c72f608677044962f60c208d77855
+        with:
+          coverageCommand: yarn test:coverage
+          coverageLocation: ${{github.workspace}}/coverage/lcov.info:lcov
