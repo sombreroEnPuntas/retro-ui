@@ -1,25 +1,24 @@
-import styled from 'styled-components'
+import { styled, Theme } from '../theme/theme'
 
 interface Props {
-  status?: 'error' | 'success'
+  status?: keyof Theme['colors'] | 'disabled'
 }
 
-export const Input = styled.input<Props>`
-  ${({ theme: { colors, fonts }, disabled, status }) => `
-    background-color: ${
-      disabled ? colors.disabled : colors[status || 'black'].background
-    };
-    border: none;
-    box-shadow: 0 4px ${colors[status || 'black'].shadow},
-      0 -4px ${colors[status || 'black'].shadow},
-      4px 0 ${colors[status || 'black'].shadow},
-      -4px 0 ${colors[status || 'black'].shadow};
-    font-family: ${fonts.fontFamily};
-    line-height: calc(2 * ${fonts.lineHeight});
-    margin: 4px;
-    outline-color: ${colors[status || 'black'].outline};
-    padding: 0.5rem 1rem;
-    `}
+export const Input = styled.input.attrs(({ status }: Props) => ({
+  disabled: status === 'disabled',
+}))<Props>`
+  ${({ theme: { colors, fonts, snippets }, status = 'black' }) => {
+    const type = status === 'disabled' ? 'warning' : status
+    return `
+      border: none;
+      font-family: ${fonts.fontFamily};
+      line-height: ${fonts.lineHeight};
+      outline-color: ${colors[type].outline};
+      padding: 0.5rem 1rem;
+
+      ${snippets.boxShadow({ colors, type })}
+    `
+  }}
 `
 
 /** @component */
