@@ -62,24 +62,12 @@ yarn lint   # lint rules
 yarn test   # run unit/integration tests
 ```
 
-When updating docs, please re-build the docs page and commit the changes:
-
-```sh
-yarn docs   # builds a styleguidist docs page
-```
-
 To try out the library from a local build:
 
 ```sh
 yarn build                      # builds for distributing as npm package
 cd ../react-test-app            # navigate to a test project
 yarn add file:../retro-ui/build # install the library from local version
-```
-
-To create a tag:
-
-```sh
-yarn release    # Generate a release with automated changelog, version bump and tag
 ```
 
 ### Local env
@@ -91,9 +79,9 @@ Don't worry, there's feedback from the tools when trying to commit 🤖📟
 ### CI & Releases
 
 - DeepScan & CodeClimate keep an eye on tech debt and give automated PR reviews
+- On every push (master or PR), CI runs linting and unit/integration tests.
+- On every push to `master` branch, CI will create a release, build library and docs, and publish to NPM.
 - On every push to `master` branch, Github pages will publish the website in `docs/` folder.
-- On every push, CI runs linting and unit/integration tests.
-- On every new `master` tag, CI will build the library and publish it to NPM.
 
 ## Contribute
 
@@ -108,8 +96,7 @@ Yes please!
 ---
 
 - is styleguidist making sense, or switch to storybook?
-  - Better stories, including types
-  - Is it possible to source stories from tests?
+  - Is it possible to source docs from tests?
 
 ---
 
