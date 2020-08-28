@@ -1,6 +1,8 @@
+const docgen = require('react-docgen-typescript')
 const path = require('path')
 
 module.exports = {
+  propsParser: docgen.withCustomConfig('./tsconfig.json').parse,
   ribbon: {
     url: 'https://github.com/sombreroEnPuntas/retro-ui',
     text: 'Fork me on GitHub',

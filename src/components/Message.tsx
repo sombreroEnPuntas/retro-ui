@@ -14,4 +14,5 @@ export const Message = styled.div<Props>`
     `}
 `
 
+/** @component */
 export default Message
