@@ -1,12 +1,8 @@
-import styled from 'styled-components'
+import { styled } from '../theme/theme'
 
 export const Button = styled.button`
-  ${({ theme: { colors, fonts } }) => `
+  ${({ theme: { colors, fonts, snippets } }) => `
     background-color: ${colors.black.background};
-    box-shadow: 4px 0 ${colors.black.shadow},
-      0 -4px ${colors.black.shadow},
-      -4px 0 ${colors.black.shadow},
-      0 4px ${colors.black.shadow};
     color: ${colors.black.outline};
     cursor: pointer;
     display: block;
@@ -14,9 +10,10 @@ export const Button = styled.button`
     font-size: 0.65em;
     font-weight: bold;
     line-height: calc(2 * ${fonts.lineHeight});
-    margin: 0.5em;
     padding: 0.5em;
-    `}
+
+    ${snippets.boxShadow({ colors, type: 'black' })}
+  `}
 `
 
 /** @component */
