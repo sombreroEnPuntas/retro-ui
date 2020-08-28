@@ -20,4 +20,5 @@ export const Box = styled.div<Props>`
   `}
 `
 
+/** @component */
 export default Box
