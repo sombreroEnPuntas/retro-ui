@@ -1,5 +1,7 @@
 import baseStyled, { keyframes, ThemedStyledInterface } from 'styled-components'
 
+import { boxShadow } from './snippets'
+
 const animations = {
   blink: keyframes`
   0% {
@@ -21,7 +23,6 @@ const colors = {
     outline: '#212529',
     shadow: '#4d5256',
   },
-  disabled: '#ebebe4',
   error: {
     background: '#ffd7cf',
     outline: '#ce372b',
@@ -44,10 +45,15 @@ const fonts = {
   lineHeight: '1.5em',
 }
 
+const snippets = {
+  boxShadow,
+}
+
 export const theme = {
   animations,
   colors,
   fonts,
+  snippets,
 }
 
 export type Theme = typeof theme
