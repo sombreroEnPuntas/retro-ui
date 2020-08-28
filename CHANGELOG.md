@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.9...v0.0.10) (2020-08-28)
+
+
+### Features
+
+* automated publishing ([f92e2e7](https://github.com/sombreroEnPuntas/retro-ui/commit/f92e2e79f7a2c2703a6b57ad0047dbe64591c98f))
+* **theme:** box shadow snippet ([52e4dcc](https://github.com/sombreroEnPuntas/retro-ui/commit/52e4dcc9838216d027258dd3796eb2d696b85f29))
+* message component ([53fa224](https://github.com/sombreroEnPuntas/retro-ui/commit/53fa2244e65b8818f96c8bca89b058aee04ca27d))
+
+
+### Bug Fixes
+
+* broken tests ([35377a8](https://github.com/sombreroEnPuntas/retro-ui/commit/35377a8bb2333722b49acd06ccb49503015f2f3a))
+* implement box shadow ([2f4fa7e](https://github.com/sombreroEnPuntas/retro-ui/commit/2f4fa7ee27fba58941ac57407c9a921147b3b722))
+* implement box shadow and warning color ([f247782](https://github.com/sombreroEnPuntas/retro-ui/commit/f2477822164f4dbf5d819a47964cdece5216198a))
+* use proper styled import ([194062a](https://github.com/sombreroEnPuntas/retro-ui/commit/194062a319e38722274f86de8ccd4c735fe24382))
+
 ### [0.0.9](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.8...v0.0.9) (2020-08-17)
 
 
