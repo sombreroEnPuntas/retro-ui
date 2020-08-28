@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import { styled } from '../theme/theme'
 
 interface Props {
   open?: boolean
