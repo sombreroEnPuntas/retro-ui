@@ -32,6 +32,11 @@ const colors = {
     outline: '#76c442',
     shadow: '#92cc41',
   },
+  warning: {
+    background: '#FFE5A6',
+    outline: '#B38106',
+    shadow: '#E9C46A',
+  },
 }
 
 const fonts = {
