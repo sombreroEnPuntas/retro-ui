@@ -8,27 +8,25 @@ import { ThemeWrapper } from '../theme/ThemeWrapper'
 import Box from './Box'
 
 const getProps = (customProps: any) => ({
+  children: ':)',
   ...customProps,
 })
 
-test('Box renders a message correctly', () => {
-  const { getByText } = render(
-    <ThemeWrapper>
-      <Box {...getProps({ children: ':)' })} />
-    </ThemeWrapper>
-  )
+describe.each`
+  displayName      | props                  | css
+  ${'Box'}         | ${{}}                  | ${'background-color: white; box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256; color: #212529;'}
+  ${'Box error'}   | ${{ type: 'error' }}   | ${'background-color: #ffd7cf; box-shadow: 0 4px #E9C46A,0 -4px #E9C46A,4px 0 #E9C46A,-4px 0 #E9C46A; color: #ce372b;'}
+  ${'Box success'} | ${{ type: 'success' }} | ${'background-color: #c9d68f; box-shadow: 0 4px #e76e55,0 -4px #e76e55,4px 0 #e76e55,-4px 0 #e76e55; color: #76c442;'}
+  ${'Box warning'} | ${{ type: 'warning' }} | ${'background-color: #FFE5A6; box-shadow: 0 4px #92cc41,0 -4px #92cc41,4px 0 #92cc41,-4px 0 #92cc41; color: #B38106;'}
+`(`$displayName`, ({ props, css }) => {
+  it(`renders with ${css}`, () => {
+    const { getByText } = render(
+      <ThemeWrapper>
+        <Box {...getProps(props)} />
+      </ThemeWrapper>
+    )
 
-  expect(getByText(':)')).toBeVisible()
-  expect(getByText(':)')).toHaveAttribute('type', 'black')
-})
-
-test('Box renders an error message correctly', () => {
-  const { getByText } = render(
-    <ThemeWrapper>
-      <Box {...getProps({ children: "418: I'm a teapot", error: true })} />
-    </ThemeWrapper>
-  )
-
-  expect(getByText("418: I'm a teapot")).toBeVisible()
-  expect(getByText("418: I'm a teapot")).toHaveAttribute('type', 'error')
+    expect(getByText(':)')).toBeVisible()
+    expect(getByText(':)')).toHaveStyle(css)
+  })
 })

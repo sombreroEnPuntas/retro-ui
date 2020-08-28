@@ -7,7 +7,7 @@ Input
 Input disabled
 
 ```jsx
-<Input disabled />
+<Input status="disabled" />
 ```
 
 Input error
