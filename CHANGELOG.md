@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.10...v0.0.11) (2020-08-31)
+
+
+### Features
+
+* mobile(reminder) & desktop breakpoints ([0c67d3c](https://github.com/sombreroEnPuntas/retro-ui/commit/0c67d3ca93de413562cb57d0a3ee424f762024bf))
+* responsive CTAs ([ff59caa](https://github.com/sombreroEnPuntas/retro-ui/commit/ff59caa57f169ecd7725099181225fd7352499db))
+
 ### [0.0.10](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.9...v0.0.10) (2020-08-28)
 
 
