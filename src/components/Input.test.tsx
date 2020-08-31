@@ -15,7 +15,7 @@ const getProps = (customProps: any) => ({
 describe.each`
   displayName         | props                     | css
   ${'Input'}          | ${{}}                     | ${'box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256; outline-color: #212529;'}
-  ${'Input disabled'} | ${{ status: 'disabled' }} | ${'box-shadow: 0 4px #E9C46A,0 -4px #E9C46A,4px 0 #E9C46A,-4px 0 #E9C46A; outline-color: #B38106;'}
+  ${'Input disabled'} | ${{ status: 'disabled' }} | ${'box-shadow: 0 4px #e9c46a,0 -4px #e9c46a,4px 0 #e9c46a,-4px 0 #e9c46a; outline-color: #b38106;'}
   ${'Input error'}    | ${{ status: 'error' }}    | ${'box-shadow: 0 4px #e76e55,0 -4px #e76e55,4px 0 #e76e55,-4px 0 #e76e55; outline-color: #ce372b;'}
   ${'Input success'}  | ${{ status: 'success' }}  | ${'box-shadow: 0 4px #92cc41,0 -4px #92cc41,4px 0 #92cc41,-4px 0 #92cc41; outline-color: #76c442;'}
 `(`$displayName`, ({ props, css }) => {

@@ -34,9 +34,9 @@ const colors = {
     shadow: '#92cc41',
   },
   warning: {
-    background: '#FFE5A6',
-    outline: '#B38106',
-    shadow: '#E9C46A',
+    background: '#ffe5a6',
+    outline: '#b38106',
+    shadow: '#e9c46a',
   },
 }
 
