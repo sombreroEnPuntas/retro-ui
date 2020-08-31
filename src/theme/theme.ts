@@ -16,6 +16,12 @@ const animations = {
   `,
 }
 
+export const breakpoints = {
+  // just a reminder to be mobile-first, don't actually use this plz :)
+  mobile: '@media (min-width: 0px)',
+  desktop: '@media (min-width: 768px)',
+}
+
 const colors = {
   black: {
     background: 'white',
@@ -51,6 +57,7 @@ const snippets = {
 
 export const theme = {
   animations,
+  breakpoints,
   colors,
   fonts,
   snippets,
