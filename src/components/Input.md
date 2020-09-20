@@ -1,23 +1,23 @@
 Input
 
 ```jsx
-<Input />
+<Input name="input" id="input" />
 ```
 
 Input disabled
 
 ```jsx
-<Input status="disabled" />
+<Input name="input disabled" status="disabled" />
 ```
 
 Input error
 
 ```jsx
-<Input status="error" />
+<Input name="input error" status="error" />
 ```
 
 Input success
 
 ```jsx
-<Input status="success" />
+<Input name="input success" status="success" />
 ```
