@@ -16,3 +16,5 @@ export const boxShadow = ({
     -4px 0 ${colors[type].shadow};
   margin: 4px;
 `
+
+export const boxShadowSize = '4px'
