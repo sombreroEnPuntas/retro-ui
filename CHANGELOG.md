@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.11...v0.0.12) (2020-09-20)
+
+
+### Features
+
+* select component ([d329399](https://github.com/sombreroEnPuntas/retro-ui/commit/d329399951d88cf62daea723302924819a290b67))
+* **input:** add label and disabled color as warning ([2c7a9ce](https://github.com/sombreroEnPuntas/retro-ui/commit/2c7a9ce6420aa9824d610645407e3660b91e1d96))
+* codeql [skip ci] ([e11d525](https://github.com/sombreroEnPuntas/retro-ui/commit/e11d525f4dfbd13ca7cba0e3e22081a628e0edc1))
+
 ### [0.0.11](https://github.com/sombreroEnPuntas/retro-ui/compare/v0.0.10...v0.0.11) (2020-08-31)
 
 
