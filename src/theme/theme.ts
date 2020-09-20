@@ -1,6 +1,6 @@
 import baseStyled, { keyframes, ThemedStyledInterface } from 'styled-components'
 
-import { boxShadow } from './snippets'
+import { boxShadow, boxShadowSize } from './snippets'
 
 const animations = {
   blink: keyframes`
@@ -53,6 +53,7 @@ const fonts = {
 
 const snippets = {
   boxShadow,
+  boxShadowSize,
 }
 
 export const theme = {

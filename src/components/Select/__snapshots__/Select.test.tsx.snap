@@ -1,0 +1,446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select disabled renders with right styles 1`] = `
+.c0 {
+  font-family: 'Press Start 2P',monospace;
+}
+
+.c0::after {
+  box-shadow: 3px 3px,6px 3px,9px 3px,12px 3px,15px 3px,6px 6px,9px 6px, 12px 6px,9px 9px;
+  color: #b38106;
+  content: '';
+  display: block;
+  height: 3px;
+  pointer-events: none;
+  position: relative;
+  top: calc(-2.2 * 1.5em);
+  left: calc(100% - 23px);
+  width: 3px;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffe5a6;
+  border: none;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 1.5em;
+  line-height: calc(2 * 1.5em);
+  outline-color: #b38106;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  text-overflow: ellipsis;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  box-shadow: 0 4px #e9c46a,0 -4px #e9c46a,4px 0 #e9c46a,-4px 0 #e9c46a;
+  margin: 4px;
+}
+
+.c1::-ms-expand {
+  display: none;
+}
+
+.c1 option {
+  background-color: white;
+  color: #212529;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 option:checked {
+  background-color: papayawhip;
+  color: #212529;
+}
+
+@media (min-width:768px) {
+  .c0::after {
+    top: calc(-1.5 * 1.5em);
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    line-height: 1.5em;
+  }
+}
+
+<label
+  class="c0"
+  type="warning"
+>
+  test
+  <select
+    class="c1"
+    data-testid="select"
+    disabled=""
+    name="test"
+  >
+    <option>
+      &lt;
+    </option>
+    <option>
+      X
+    </option>
+    <option>
+      &gt;
+    </option>
+  </select>
+</label>
+`;
+
+exports[`Select error renders with right styles 1`] = `
+.c0 {
+  font-family: 'Press Start 2P',monospace;
+}
+
+.c0::after {
+  box-shadow: 3px 3px,6px 3px,9px 3px,12px 3px,15px 3px,6px 6px,9px 6px, 12px 6px,9px 9px;
+  color: #ce372b;
+  content: '';
+  display: block;
+  height: 3px;
+  pointer-events: none;
+  position: relative;
+  top: calc(-2.2 * 1.5em);
+  left: calc(100% - 23px);
+  width: 3px;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: none;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 1.5em;
+  line-height: calc(2 * 1.5em);
+  outline-color: #ce372b;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  text-overflow: ellipsis;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  box-shadow: 0 4px #e76e55,0 -4px #e76e55,4px 0 #e76e55,-4px 0 #e76e55;
+  margin: 4px;
+}
+
+.c1::-ms-expand {
+  display: none;
+}
+
+.c1 option {
+  background-color: white;
+  color: #212529;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 option:checked {
+  background-color: papayawhip;
+  color: #212529;
+}
+
+@media (min-width:768px) {
+  .c0::after {
+    top: calc(-1.5 * 1.5em);
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    line-height: 1.5em;
+  }
+}
+
+<label
+  class="c0"
+  type="error"
+>
+  test
+  <select
+    class="c1"
+    data-testid="select"
+    name="test"
+  >
+    <option>
+      &lt;
+    </option>
+    <option>
+      X
+    </option>
+    <option>
+      &gt;
+    </option>
+  </select>
+</label>
+`;
+
+exports[`Select multiple renders with right styles 1`] = `
+.c0 {
+  font-family: 'Press Start 2P',monospace;
+}
+
+.c0::after {
+  box-shadow: 3px 3px,6px 3px,9px 3px,12px 3px,15px 3px,6px 6px,9px 6px, 12px 6px,9px 9px;
+  color: transparent;
+  content: '';
+  display: block;
+  height: 3px;
+  pointer-events: none;
+  position: relative;
+  top: calc(-2.2 * 1.5em);
+  left: calc(100% - 23px);
+  width: 3px;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: none;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 1.5em;
+  line-height: calc(2 * 1.5em);
+  outline-color: #212529;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  text-overflow: ellipsis;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
+}
+
+.c1::-ms-expand {
+  display: none;
+}
+
+.c1 option {
+  background-color: white;
+  color: #212529;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 option:checked {
+  background-color: papayawhip;
+  color: #212529;
+}
+
+@media (min-width:768px) {
+  .c0::after {
+    top: calc(-1.5 * 1.5em);
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    line-height: 1.5em;
+  }
+}
+
+<label
+  class="c0"
+>
+  test
+  <select
+    class="c1"
+    data-testid="select"
+    multiple=""
+    name="test"
+  >
+    <option>
+      &lt;
+    </option>
+    <option>
+      X
+    </option>
+    <option>
+      &gt;
+    </option>
+  </select>
+</label>
+`;
+
+exports[`Select renders with right styles 1`] = `
+.c0 {
+  font-family: 'Press Start 2P',monospace;
+}
+
+.c0::after {
+  box-shadow: 3px 3px,6px 3px,9px 3px,12px 3px,15px 3px,6px 6px,9px 6px, 12px 6px,9px 9px;
+  color: #212529;
+  content: '';
+  display: block;
+  height: 3px;
+  pointer-events: none;
+  position: relative;
+  top: calc(-2.2 * 1.5em);
+  left: calc(100% - 23px);
+  width: 3px;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: none;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 1.5em;
+  line-height: calc(2 * 1.5em);
+  outline-color: #212529;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  text-overflow: ellipsis;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
+}
+
+.c1::-ms-expand {
+  display: none;
+}
+
+.c1 option {
+  background-color: white;
+  color: #212529;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 option:checked {
+  background-color: papayawhip;
+  color: #212529;
+}
+
+@media (min-width:768px) {
+  .c0::after {
+    top: calc(-1.5 * 1.5em);
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    line-height: 1.5em;
+  }
+}
+
+<label
+  class="c0"
+>
+  test
+  <select
+    class="c1"
+    data-testid="select"
+    name="test"
+  >
+    <option>
+      &lt;
+    </option>
+    <option>
+      X
+    </option>
+    <option>
+      &gt;
+    </option>
+  </select>
+</label>
+`;
+
+exports[`Select success renders with right styles 1`] = `
+.c0 {
+  font-family: 'Press Start 2P',monospace;
+}
+
+.c0::after {
+  box-shadow: 3px 3px,6px 3px,9px 3px,12px 3px,15px 3px,6px 6px,9px 6px, 12px 6px,9px 9px;
+  color: #76c442;
+  content: '';
+  display: block;
+  height: 3px;
+  pointer-events: none;
+  position: relative;
+  top: calc(-2.2 * 1.5em);
+  left: calc(100% - 23px);
+  width: 3px;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: none;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 1.5em;
+  line-height: calc(2 * 1.5em);
+  outline-color: #76c442;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  text-overflow: ellipsis;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  box-shadow: 0 4px #92cc41,0 -4px #92cc41,4px 0 #92cc41,-4px 0 #92cc41;
+  margin: 4px;
+}
+
+.c1::-ms-expand {
+  display: none;
+}
+
+.c1 option {
+  background-color: white;
+  color: #212529;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 option:checked {
+  background-color: papayawhip;
+  color: #212529;
+}
+
+@media (min-width:768px) {
+  .c0::after {
+    top: calc(-1.5 * 1.5em);
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    line-height: 1.5em;
+  }
+}
+
+<label
+  class="c0"
+  type="success"
+>
+  test
+  <select
+    class="c1"
+    data-testid="select"
+    name="test"
+  >
+    <option>
+      &lt;
+    </option>
+    <option>
+      X
+    </option>
+    <option>
+      &gt;
+    </option>
+  </select>
+</label>
+`;
