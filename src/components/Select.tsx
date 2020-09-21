@@ -1,5 +1,5 @@
 import React, { ComponentProps, HTMLProps } from 'react'
-import { styled, Theme } from '../../theme/theme'
+import { styled, Theme } from '../theme/theme'
 
 interface LabelProps extends HTMLProps<HTMLLabelElement> {
   multiple?: boolean

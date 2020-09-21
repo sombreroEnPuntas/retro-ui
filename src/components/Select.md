@@ -21,6 +21,8 @@ Select
 </Select>
 ```
 
+Select multiple
+
 ```jsx
 <Select multiple name="select multiple">
   <option></option>
